@@ -1,0 +1,33 @@
+import time
+import socket
+
+name = input('Enter your NAME: ')
+city = input('Enter your CITY: ')
+country = input('Enter your COUNTRY: ')
+time.sleep(2)
+print("DEAR, "+ name.title() + " are you sure you want to hack nasa?(yes/no)")
+Y=input()
+hostname=socket.gethostname()
+ip=socket.gethostbyname(hostname)
+
+if Y.lower() =='yes':
+    print("Started  hacking NASA")
+    time.sleep(1)
+    print('retrieving  localhost')
+    time.sleep(0.5)
+    print('Your Host: ' + hostname)
+    time.sleep(0.5)
+    print('Your IP :'+ ip)
+    print('initiated hacking NASA')
+    time.sleep(5)
+    print('hacking NASA 10%')
+    time.sleep(1)
+    print('hacking NASA 25%')
+    time.sleep(2)
+    print('hacking NASA 60%')
+    time.sleep(3)
+    print('hacking NASA 90%')
+    time.sleep(4)
+    print('hacking NASA 99%')
+    time.sleep(5)
+    print('Nasa has been hacked sucessfully by ' + name.title() +" from " +city +','+ country)
